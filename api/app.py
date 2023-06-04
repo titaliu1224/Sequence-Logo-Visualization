@@ -15,10 +15,10 @@ def webSite():
 @app.route('/generate_logo', methods=['GET', 'POST'])
 def generate_logo():
     if request.method == 'POST':
-        # delete old file
-        for filename in os.listdir(SAVE_PATH): 
-            file_path = os.path.join(SAVE_PATH, filename)
-            os.remove(file_path)
+        # delete old file (no need in vercel)
+        # for filename in os.listdir(SAVE_PATH): 
+        #     file_path = os.path.join(SAVE_PATH, filename)
+        #     os.remove(file_path)
 
         # get input from form
         global sequences, sequences_file, image_format
