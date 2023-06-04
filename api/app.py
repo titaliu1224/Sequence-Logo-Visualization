@@ -3,7 +3,7 @@ import os, matplotlib
 import Logo
 
 app = Flask(__name__)
-SAVE_PATH = os.path.join(os.path.dirname(__file__), 'static', 'files')
+SAVE_PATH = "/tmp"
 sequences = []
 sequences_file = None
 image_format = ''
