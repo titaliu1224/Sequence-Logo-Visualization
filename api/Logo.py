@@ -24,6 +24,7 @@ def visualize_sequence_logo(sequences, save_path=None, image_format=None, show_i
     # 儲存 logo
     plt_path = os.path.join(save_path, 'logo.' + image_format)
     plt.savefig(plt_path)
+    print("saved image: ", plt_path)
 
 # sequences = []
 # fasta_file = "test.fasta"
