@@ -1,1 +1,5 @@
 Flask==2.2.2
+logomaker
+matplotlib
+os
+numpy
