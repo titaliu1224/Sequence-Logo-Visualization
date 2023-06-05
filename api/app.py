@@ -41,7 +41,7 @@ def generate_logo():
 
         # generate logo
         matplotlib.use('agg') # 因為在 flask 中使用，所以要加這行
-        Logo.visualize_sequence_logo(sequences, SAVE_PATH, image_format)
+        visualize_sequence_logo(sequences, SAVE_PATH, image_format)
 
         sequence_length = max([len(sequence) for sequence in sequences])
         print(sequences_input)
